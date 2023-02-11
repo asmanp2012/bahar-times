@@ -1,0 +1,137 @@
+:root {
+  /* Dynamic HSL */
+  /* --ref-palette-primary-hue: 205; */
+  --ref-palette-primary-hue: 0;
+  --ref-palette-primary-chroma: 48%; /* maximum 48 */
+  --ref-palette-secondary-hue: var(--ref-palette-primary-hue);
+  --ref-palette-secondary-chroma: 16%;
+  --ref-palette-tertiary-hue: calc(var(--ref-palette-primary-hue) + 60);
+  --ref-palette-tertiary-chroma: 24%;
+  --ref-palette-neutral-hue: var(--ref-palette-primary-hue);
+  --ref-palette-neutral-chroma: 4%;
+  --ref-palette-neutral-variant-hue: var(--ref-palette-primary-hue);
+  --ref-palette-neutral-variant-chroma: 8%;
+  --ref-palette-error-hue: 25;
+  --ref-palette-error-chroma: 84%;
+
+  --ref-present-0: 0%;
+  --ref-present-10: 10%;
+  --ref-present-20: 20%;
+  --ref-present-30: 30%;
+  --ref-present-40: 40%;
+  --ref-present-50: 50%;
+  --ref-present-60: 60%;
+  --ref-present-70: 70%;
+  --ref-present-80: 80%;
+  --ref-present-90: 90%;
+  --ref-present-100: 100%;
+
+  /* primary */
+  --ref-palette-primary0: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-0);
+  --ref-palette-primary10: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-10);
+  --ref-palette-primary20: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-20);
+  --ref-palette-primary30: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-30);
+  --ref-palette-primary40: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-40);
+  --ref-palette-primary50: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-50);
+  --ref-palette-primary60: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-60);
+  --ref-palette-primary70: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-70);
+  --ref-palette-primary80: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-80);
+  --ref-palette-primary90: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-90);
+  --ref-palette-primary100: var(--ref-palette-primary-hue), var(--ref-palette-primary-chroma), var(--ref-present-100);
+
+  /* secondary */
+  --ref-palette-secondary0: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-0);
+  --ref-palette-secondary10: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-10);
+  --ref-palette-secondary20: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-20);
+  --ref-palette-secondary30: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-30);
+  --ref-palette-secondary40: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-40);
+  --ref-palette-secondary50: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-50);
+  --ref-palette-secondary60: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-60);
+  --ref-palette-secondary70: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-70);
+  --ref-palette-secondary80: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-80);
+  --ref-palette-secondary90: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-90);
+  --ref-palette-secondary100: var(--ref-palette-secondary-hue), var(--ref-palette-secondary-chroma), var(--ref-present-100);
+
+  /* tertiary */
+  --ref-palette-tertiary0: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-0);
+  --ref-palette-tertiary10: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-10);
+  --ref-palette-tertiary20: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-20);
+  --ref-palette-tertiary30: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-30);
+  --ref-palette-tertiary40: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-40);
+  --ref-palette-tertiary50: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-50);
+  --ref-palette-tertiary60: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-60);
+  --ref-palette-tertiary70: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-70);
+  --ref-palette-tertiary80: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-80);
+  --ref-palette-tertiary90: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-90);
+  --ref-palette-tertiary100: var(--ref-palette-tertiary-hue), var(--ref-palette-tertiary-chroma), var(--ref-present-100);
+
+  /* neutral */
+  --ref-palette-neutral0: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-0);
+  --ref-palette-neutral10: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-10);
+  --ref-palette-neutral20: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-20);
+  --ref-palette-neutral30: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-30);
+  --ref-palette-neutral40: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-40);
+  --ref-palette-neutral50: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-50);
+  --ref-palette-neutral60: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-60);
+  --ref-palette-neutral70: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-70);
+  --ref-palette-neutral80: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-80);
+  --ref-palette-neutral90: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-90);
+  --ref-palette-neutral100: var(--ref-palette-neutral-hue), var(--ref-palette-neutral-chroma), var(--ref-present-100);
+
+  /* neutral-variant */
+  --ref-palette-neutral-variant0: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-0);
+  --ref-palette-neutral-variant10: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-10);
+  --ref-palette-neutral-variant20: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-20);
+  --ref-palette-neutral-variant30: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-30);
+  --ref-palette-neutral-variant40: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-40);
+  --ref-palette-neutral-variant50: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-50);
+  --ref-palette-neutral-variant60: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-60);
+  --ref-palette-neutral-variant70: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-70);
+  --ref-palette-neutral-variant80: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-80);
+  --ref-palette-neutral-variant90: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-90);
+  --ref-palette-neutral-variant100: var(--ref-palette-neutral-variant-hue), var(--ref-palette-neutral-variant-chroma), var(--ref-present-100);
+
+  /* error */
+  --ref-palette-error0: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-0);
+  --ref-palette-error10: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-10);
+  --ref-palette-error20: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-20);
+  --ref-palette-error30: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-30);
+  --ref-palette-error40: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-40);
+  --ref-palette-error50: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-50);
+  --ref-palette-error60: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-60);
+  --ref-palette-error70: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-70);
+  --ref-palette-error80: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-80);
+  --ref-palette-error90: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-90);
+  --ref-palette-error100: var(--ref-palette-error-hue), var(--ref-palette-error-chroma), var(--ref-present-100);
+}
+
+
+html.dark {
+  --ref-present-0: 100%;
+  --ref-present-10: 90%;
+  --ref-present-20: 80%;
+  --ref-present-30: 70%;
+  --ref-present-40: 60%;
+  --ref-present-50: 50%;
+  --ref-present-60: 40%;
+  --ref-present-70: 30%;
+  --ref-present-80: 20%;
+  --ref-present-90: 10%;
+  --ref-present-100: 0%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ref-present-0: 100%;
+    --ref-present-10: 90%;
+    --ref-present-20: 80%;
+    --ref-present-30: 70%;
+    --ref-present-40: 60%;
+    --ref-present-50: 50%;
+    --ref-present-60: 40%;
+    --ref-present-70: 30%;
+    --ref-present-80: 20%;
+    --ref-present-90: 10%;
+    --ref-present-100: 0%;
+  }
+}
