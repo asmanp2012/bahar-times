@@ -1,7 +1,7 @@
 :root {
   /* Dynamic HSL */
-  /* --ref-palette-primary-hue: 205; */
-  --ref-palette-primary-hue: 0;
+  --ref-palette-primary-hue: 205;
+  /* --ref-palette-primary-hue: 0; */
   --ref-palette-primary-chroma: 48%; /* maximum 48 */
   --ref-palette-secondary-hue: var(--ref-palette-primary-hue);
   --ref-palette-secondary-chroma: 16%;
