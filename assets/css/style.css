@@ -340,10 +340,14 @@ swiper-container.swiper-initialized swiper-slide
 
 .list-profile {
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  grid-template-columns: repeat(5, 20%);
   justify-content: center;
+}
+
+.list-profile > * {
+  width: 19%;
 }
 
 .profile {
