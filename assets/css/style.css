@@ -479,3 +479,11 @@ swiper-container.swiper-initialized swiper-slide
   width: 100%;
   clear: both;
 }
+
+.page-break {
+  break-after: page;
+}
+
+.end-page {
+  margin-bottom: 2em;
+}
