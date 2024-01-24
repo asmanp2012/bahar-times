@@ -45,7 +45,7 @@ body {
 .space-align {
   margin-top: 1em;
   margin-bottom: 1em;
-  padding: 24px;
+  /* padding: 24px; */
   border-radius: 19px;
 }
 
@@ -78,7 +78,8 @@ body {
 }
 .site-logo .title a svg {
   height: 50px;
-  top:0px
+  top:0px;
+  max-width: 100%;
 }
 
 .site-logo .slogan {
@@ -339,9 +340,11 @@ swiper-container.swiper-initialized swiper-slide
   padding-top: calc(0.5em - 1px);
   position: relative;
   vertical-align: top;
+  background: none;
+  margin-bottom: 5px;
 }
 
-.btn {
+.btn-primary {
   /* background-color: hsl(var(--ref-palette-neutral100)); */
   border-color: hsl(var(--ref-palette-neutral30));
   border-width: 1px;
@@ -354,6 +357,12 @@ swiper-container.swiper-initialized swiper-slide
   padding-top: calc(0.5em - 1px);
   text-align: center;
   white-space: nowrap;
+}
+
+.btn-icon {
+  padding: 5px !important;
+  display: inline-block;
+  height: auto;
 }
 
 .section {
@@ -548,4 +557,54 @@ swiper-container.swiper-initialized swiper-slide
 
 .end-page {
   margin-bottom: 2em;
+}
+
+
+@media only screen and (max-width: 980px) {
+  .main {
+    width: 93%;
+  }
+  .main-menu ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  .main-menu.show ul{
+    max-height: 2000px;
+  }
+  .site-logo .title {
+    width: calc(100% - 100px);
+    display: inline-block;
+  }
+
+  .split-two-child-right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .typography-align img {
+    display: block;
+    float: none !important;
+    width: 70%;
+    margin: 12px auto !important;
+  }
+
+  .mag-title {
+    display: block !important;
+    text-align: center;
+  }
+  .dark-mode-switch {
+    margin: 0 auto;
+  }
+  .author-list-page h1{
+    font-size: 1.5em;
+  }
+  .list-profile > * {
+    width: 46%;
+  }
 }
