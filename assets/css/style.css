@@ -540,8 +540,20 @@ swiper-container.swiper-initialized swiper-slide
 .show-in-print {
   display: none;
 }
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
 
 @media print {
+  .d-print-none {
+    display: none !important;
+  }
+  .d-print-block {
+    display: block !important;
+  }
   .show-in-print {
     display: block;
   }
@@ -558,8 +570,31 @@ swiper-container.swiper-initialized swiper-slide
 .end-page {
   margin-bottom: 2em;
 }
-
-
+@media (min-width: 1400px) {
+  .d-xxl-none {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .d-xl-none {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) { 
+  .d-sm-none {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 980px) {
   .main {
     width: 93%;
