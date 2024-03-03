@@ -609,6 +609,40 @@ swiper-container.swiper-initialized swiper-slide
     transition: 1s;
   }
 
+  .hidden-scroll {
+    overflow-y: hidden;
+  }
+
+  .open-menu {
+    display: block;
+    z-index: 5000;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 160px);
+    top: 160px;
+    left: 0px;
+    padding-top: 25px;
+    background: #fff;
+  }
+
+  .open-menu {
+    overflow-y: scroll;
+  }
+  
+  .open-menu ul {
+    display: block;
+    overflow: unset;
+  }
+
+  .open-menu ul li a {
+    padding-block: 20px;
+    display: block;
+  }
+
+  .dark-mode-switch {
+    margin-block: 20px;
+  }
+
   .main-menu.show ul{
     max-height: 2000px;
   }
