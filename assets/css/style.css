@@ -577,6 +577,9 @@ swiper-container.swiper-initialized swiper-slide
     clear: both;
     break-after: page;
   }
+  figure {
+    display: none !important;
+  }
 }
 
 .image-roving {
