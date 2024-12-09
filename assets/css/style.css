@@ -577,7 +577,10 @@ swiper-container.swiper-initialized swiper-slide
     clear: both;
     break-after: page;
   }
-  figure {
+  figure,
+  figure * {
+    height: 0px !important;
+    padding: 0px !important;
     display: none !important;
   }
 }
