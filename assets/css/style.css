@@ -532,6 +532,10 @@ swiper-container.swiper-initialized swiper-slide
   display: inline-block;
 }
 
+.display-flex {
+  display: flex;
+}
+
 .gray-text {
   color: hsl(var(--ref-palette-neutral30));
 }
